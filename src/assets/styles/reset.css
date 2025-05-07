@@ -1,0 +1,57 @@
+/* 기본적인 박스 모델 통일 */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* 마진 제거 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+/* 폰트 상속 */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 이미지 등 요소 너비 제한 */
+img,
+svg,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+/* 테이블 기본값 */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* list */
+li {
+	list-style-type: none;
+}
+

@@ -1,0 +1,31 @@
+/* Header.css */
+header nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width:100%;
+}
+header nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.top-nav {
+	background-color: #f0f0f0;
+}
+.top-nav li {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	font-size: .875rem;
+}
+
+.global-nav {
+	justify-content: space-between;
+	padding: 1rem;
+	border-bottom: solid 1px #eee;
+}
+.global-nav li {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	font-size: 1.25rem;
+}

@@ -1,0 +1,24 @@
+/* layout.css */
+
+@import url(reset.css);
+
+[class*='-layout'] [class*='-body'] {
+	display: flex;
+	flex: 1;
+}
+
+[class*='-layout'] [class*='-body'] > * {
+	padding: 1rem;
+}
+
+[class*='-layout'] [class*='-body'] > .sidebar {
+	flex: 1 0 240px;
+	max-width: 240px;
+
+	border-right: solid 1px #eee;
+}
+
+[class*='-layout'] [class*='-body'] > main {
+	flex: calc(100% - 240px);
+	max-width: calc(100% - 240px);
+}

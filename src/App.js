@@ -1,7 +1,3 @@
-// css
-import 'ag-grid-community/styles/ag-grid.css';
-import 'ag-grid-community/styles/ag-theme-quartz.css'; // quartz 테마 CSS
-
 // App.js
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
@@ -14,6 +10,11 @@ import SimpleLayout from './layouts/SimpleLayout';
 import AdminLayout from './layouts/AdminLayout';
 import UserLayout from './layouts/UserLayout';
 import PopupLayout from './layouts/PopupLayout';
+
+import './assets/styles/layout.css';
+/* // css
+import 'ag-grid-community/styles/ag-grid.css';
+import 'ag-grid-community/styles/ag-theme-quartz.css'; // quartz 테마 CSS */
 
 function App() {
   return (
