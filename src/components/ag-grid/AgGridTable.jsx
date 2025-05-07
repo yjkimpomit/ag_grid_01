@@ -40,12 +40,12 @@ const AgGridTable = () => {
 	const gridOptions = {
 		pagination: true,
 		paginationPageSize: 2,
-		paginationPageSizeSelector: [2, 20, 50, 100],
+		paginationPageSizeSelector: [2, 10, 50, 100],
 		// 기타 설정들
 	};
 
 	return (
-		<div style={{ height: 400, width: '100%' }}>
+		<div style={{ height: "100%", width: '100%' }}>
 			<AgGridReact
 				theme={myTheme}
 				gridOptions={gridOptions}
