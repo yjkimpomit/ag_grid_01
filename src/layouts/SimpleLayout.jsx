@@ -1,6 +1,8 @@
 // Layouts/SimpleLayout.jsx
 const SimpleLayout = ({ children }) => (
-	<main className="simple-layout">{children}</main>
+	<div className="simple-layout">
+		<main>{children}</main>
+	</div>
 );
 
 export default SimpleLayout;

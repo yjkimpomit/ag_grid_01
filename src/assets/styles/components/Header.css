@@ -1,4 +1,6 @@
 /* Header.css */
+
+/* 공통 */
 header nav {
 	display: flex;
 	justify-content: flex-end;
@@ -10,22 +12,47 @@ header nav ul {
 	list-style-type: none;
 }
 
-.top-nav {
-	background-color: #f0f0f0;
-}
-.top-nav li {
-	padding-left: .5rem;
-	padding-right: .5rem;
-	font-size: .875rem;
+/* logo */
+header .logo {
+	background-image: url('/src/assets/images/logo.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: auto 32px;
+	width: 120px;
+	height: 32px;
 }
 
+/* 상단 */
+.top-nav {
+	background-color: var(--bg-lighter);
+	height: 32px;
+}
+.top-nav li {
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 15px;
+}
+
+/* datetime */
+.datetime {
+	margin: 0 -8px;
+}
+.datetime strong {
+	margin: 0 8px;
+}
+.datetime span {
+	margin: 0 2px;
+}
+
+/* 하단 */
 .global-nav {
 	justify-content: space-between;
 	padding: 1rem;
 	border-bottom: solid 1px #eee;
 }
 .global-nav li {
-	padding-left: .5rem;
-	padding-right: .5rem;
-	font-size: 1.25rem;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 18px;
+	font-weight: 700;
 }

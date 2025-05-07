@@ -22,7 +22,10 @@ const Login = () => {
 	return (
 		<div className="login-container">
 			<div className="login-box">
-				<h2>로그인</h2>
+				<div className="logo">
+					<span className="visually-hidden">포미트</span>
+					<span>로그인</span>
+				</div>
 				{error && <p style={{ color: 'red' }}>{error}</p>}
 				<form onSubmit={handleSubmit}>
 					<div>

@@ -1,10 +1,15 @@
 /* layout.css */
-
 @import url(reset.css);
 
+/* footer */
+footer {
+	color: var(--black);
+}
+
+/* layout */
 [class*='-layout'] [class*='-body'] {
 	display: flex;
-	flex: 1;
+	flex-grow: 1;
 }
 
 [class*='-layout'] [class*='-body'] > * {
@@ -18,7 +23,7 @@
 	border-right: solid 1px #eee;
 }
 
-[class*='-layout'] [class*='-body'] > main {
+[class*='-layout'] [class*='-body'] > .sidebar + main {
 	flex: calc(100% - 240px);
 	max-width: calc(100% - 240px);
 }
