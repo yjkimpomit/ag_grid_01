@@ -40,7 +40,7 @@ const AgGridTable = () => {
 	const gridOptions = {
 		pagination: true,
 		paginationPageSize: 2,
-		paginationPageSizeSelector: [2, 10, 50, 100],
+		//paginationPageSizeSelector: [2, 10, 50, 100],
 		// 기타 설정들
 	};
 

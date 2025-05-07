@@ -1,6 +1,6 @@
-// src/pages/Home.jsx
+// src/pages/user/Home.jsx
 import React from 'react';
-import AgGridTable from '../components/ag-grid/AgGridTable';
+import AgGridTable from '../../components/ag-grid/AgGridTable';
 
 const Home = () => {
 	return (
