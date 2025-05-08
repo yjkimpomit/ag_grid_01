@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './pages/Login';
 
 // 레이아웃
-import SimpleLayout from './layouts/SimpleLayout';
+import BlankLayout from './layouts/BlankLayout';
+import FullWidthLayout from './layouts/FullWidthLayout';
 import AdminLayout from './layouts/AdminLayout';
 import UserLayout from './layouts/UserLayout';
 import PopupLayout from './layouts/PopupLayout';
@@ -45,12 +46,14 @@ function App() {
 
 				{/* 로그인 */}
 				<Route path="/login" element={
-					<SimpleLayout><Login /></SimpleLayout>
+					<BlankLayout><Login /></BlankLayout>
 				} />
 
-				<Route path="/admin" element={<AdminLayout />}>
+				{/* 인덱스(좌측 메뉴 없는 레이아웃) */}
+				<Route path="/admin" element={<FullWidthLayout><DashboardHome /></FullWidthLayout>} />
+
+				<Route path="/admin/*" element={<AdminLayout />}>
 					{/* 1차 메뉴: 공통 디자인 */}
-					<Route index element={<DashboardHome />} />
 					<Route path="dashboard" element={<DashboardHome />} />
 					<Route path="user" element={<AdminUserHome />} />
 					<Route path="settings" element={<SettingsHome />} />

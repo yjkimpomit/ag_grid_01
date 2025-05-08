@@ -12,7 +12,7 @@ const DashboardHome = () => {
 	];
 
 	const adminData = [
-		{ make: 'Toyota', model: 'Celica', price: 35000 },
+		{ make: 'Toyota', model: 'Celica Celica Celica', price: 35000 },
 		{ make: 'Porsche', model: 'Taycan', price: 122000 },
 		{ make: 'Ford', model: 'Mondeo', price: 32000 },
 		{ make: 'Porsche', model: 'Boxster', price: 72000 },

@@ -23,7 +23,7 @@ const Header = () => {
 				</Link>
 				<ul>
 					<li><Link to="/user/home">User</Link></li>
-					<li><Link to="/admin/dashboard">Admin</Link></li>
+					<li><Link to="/admin/">Admin</Link></li>
 					{/* <li><Link to="/ag-grid">AG Grid</Link></li> */}
 				</ul>
 			</nav>

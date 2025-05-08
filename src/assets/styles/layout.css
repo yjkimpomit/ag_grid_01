@@ -62,3 +62,8 @@ main p, main ul, main ol {
 	padding-bottom: 40px;
 	margin: 0 2rem;
 }
+
+/* fullwidth-body */
+.fullwidth-body {
+    justify-content: center;
+}
