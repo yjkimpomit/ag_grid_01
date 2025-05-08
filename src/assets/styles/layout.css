@@ -1,29 +1,64 @@
 /* layout.css */
-@import url(reset.css);
 
-/* footer */
-footer {
-	color: var(--black);
+main h1 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+main h2 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+main h3 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+main h4 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+main h5 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+main h6 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+/* 콘텐츠 영역 공통마진 */
+main p, main ul, main ol {
+	margin-bottom: 20px;
+}
+
+/* 푸터 고정으로 처리할 때 패딩 넣어줌 */
+#root > [class*='-layout'] {
+	padding-bottom: var(--footer-height);
 }
 
 /* layout */
-[class*='-layout'] [class*='-body'] {
+#root > [class*='-layout'] > [class*='-body'] {
 	display: flex;
 	flex-grow: 1;
+	margin-top: 80px;
 }
 
-[class*='-layout'] [class*='-body'] > * {
-	padding: 1rem;
-}
-
-[class*='-layout'] [class*='-body'] > .sidebar {
+#root > [class*='-layout'] > [class*='-body'] > .sidebar {
 	flex: 1 0 240px;
 	max-width: 240px;
-
-	border-right: solid 1px #eee;
 }
 
-[class*='-layout'] [class*='-body'] > .sidebar + main {
+#root > [class*='-layout'] > [class*='-body'] > .sidebar + main {
 	flex: calc(100% - 240px);
 	max-width: calc(100% - 240px);
+
+	border-left: solid 1px var(--border-lightest);
+	min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+#root > [class*='-layout'] > [class*='-body'] > .sidebar > nav {
+	margin: 0 1rem;
+}
+#root > [class*='-layout'] > [class*='-body'] > .sidebar + main > div {
+	padding-bottom: 40px;
+	margin: 0 2rem;
 }

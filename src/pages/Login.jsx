@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../assets/styles/pages/Login.css';
+import '../assets/styles/pages/login.css';
 
 const Login = () => {
 	const [username, setUsername] = useState('');
@@ -22,10 +22,10 @@ const Login = () => {
 	return (
 		<div className="login-container">
 			<div className="login-box">
-				<div className="logo">
+				<h1 className="logo">
 					<span className="visually-hidden">포미트</span>
 					<span>로그인</span>
-				</div>
+				</h1>
 				{error && <p style={{ color: 'red' }}>{error}</p>}
 				<form onSubmit={handleSubmit}>
 					<div>

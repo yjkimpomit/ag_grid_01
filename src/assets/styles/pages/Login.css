@@ -38,7 +38,7 @@
 	width: auto;
 	height: 48px;
 
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 .logo > span {
 	font-size: 27px;
@@ -59,13 +59,8 @@
 	background-color: var(--border-light);
 }
 
-.login-box h2 {
-	margin-bottom: 32px;
-	font-size: 2rem;
-	text-align: center;
-}
-
 .login-box label {
+	font-size: 18px;
 	display: block;
 	margin-bottom: 8px;
 }
@@ -81,17 +76,18 @@
 
 .login-box button {
 	width: 100%;
-	padding: 12px;
-	background-color: #3498db;
+	background-color: var(--brand);
 	color: white;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 16px;
-	font-weight: 700;
-	height: 48px;
+	font-size: 20px;
+	font-weight: 600;
+	height: 56px;
+
+	transition: background-color 1s ease-in-out .1s;
 }
 
 .login-box button:hover {
-	background-color: #2980b9;
+	background-color: var(--brand-lighter);
 }

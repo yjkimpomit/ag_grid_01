@@ -1,0 +1,27 @@
+/* sidebar.css */
+
+.sidebar nav {
+	position: fixed;
+	top: auto;
+}
+
+.sidebar a {
+	color: var(--link);
+}
+
+.sidebar nav ul ul {
+	margin: 16px 0 16px 16px;
+}
+
+.sidebar nav > ul > li {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.sidebar nav li li {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+

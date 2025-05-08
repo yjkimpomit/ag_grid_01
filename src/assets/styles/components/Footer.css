@@ -1,0 +1,18 @@
+/* Footer.css */
+
+footer {
+	margin-top: 1rem;
+	padding: 1rem;
+	color: var(--text-light);
+	border-top: solid 1px var(--border-lightest);
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: var(--footer-height);
+
+	font-size: 14px;
+
+    backdrop-filter: blur(4px);
+	background-color: var(--white-40);
+}

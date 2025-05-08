@@ -1,50 +1,92 @@
 // App.js
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
-import Dashboard from './pages/admin/Dashboard';
-import UserHome from './pages/user/Home';
-import PopupPage from './pages/PopupPage';
 
+// 레이아웃
 import SimpleLayout from './layouts/SimpleLayout';
-
 import AdminLayout from './layouts/AdminLayout';
 import UserLayout from './layouts/UserLayout';
 import PopupLayout from './layouts/PopupLayout';
 
+// 관리자
+// 1차 메뉴(공통 디자인)
+import DashboardHome from './pages/admin/DashboardHome';
+import AdminUserHome from './pages/admin/AdminUserHome';
+import SettingsHome from './pages/admin/SettingsHome';
+
+// 2차 메뉴(고유 디자인)
+import DashboardSummary from './pages/admin/dashboard/Summary';
+import DashboardRealtime from './pages/admin/dashboard/Realtime';
+import DashboardNotice from './pages/admin/dashboard/Notice';
+
+import UserList from './pages/admin/user/List';
+import UserRegister from './pages/admin/user/Register';
+import UserWithdrawn from './pages/admin/user/Withdrawn';
+
+import SettingsRoles from './pages/admin/settings/Roles';
+import SettingsEnv from './pages/admin/settings/Env';
+import SettingsLogs from './pages/admin/settings/Logs';
+
+// 사용자
+import UserHome from './pages/user/Home';
+import About from './pages/user/About';
+
+// 팝업업
+import PopupPage from './pages/PopupPage';
+
 import './assets/styles/layout.css';
-/* // css
-import 'ag-grid-community/styles/ag-grid.css';
-import 'ag-grid-community/styles/ag-theme-quartz.css'; // quartz 테마 CSS */
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-		{/* 루트 */}
-	  	<Route path="/" element={<Navigate to="/login" />} />
+	return (
+		<Router>
+			<Routes>
+				{/* 루트 */}
+				<Route path="/" element={<Navigate to="/login" replace />} />
 
-        {/* 로그인 */}
-        <Route path="/login" element={
-          <SimpleLayout><Login /></SimpleLayout>
-        } />
+				{/* 로그인 */}
+				<Route path="/login" element={
+					<SimpleLayout><Login /></SimpleLayout>
+				} />
 
-        {/* 관리자 레이아웃 */}
-        <Route path="/admin/dashboard" element={
-          <AdminLayout><Dashboard /></AdminLayout>
-        } />
+				<Route path="/admin" element={<AdminLayout />}>
+					{/* 1차 메뉴: 공통 디자인 */}
+					<Route index element={<DashboardHome />} />
+					<Route path="dashboard" element={<DashboardHome />} />
+					<Route path="user" element={<AdminUserHome />} />
+					<Route path="settings" element={<SettingsHome />} />
 
-        {/* 사용자 레이아웃 */}
-        <Route path="/user/home" element={
-          <UserLayout><UserHome /></UserLayout>
-        } />
+					{/* 2차 메뉴: 고유 디자인 */}
+					<Route path="dashboard/summary" element={<DashboardSummary />} />
+					<Route path="dashboard/realtime" element={<DashboardRealtime />} />
+					<Route path="dashboard/notice" element={<DashboardNotice />} />
 
-        {/* 팝업 페이지 */}
-        <Route path="/popup/sample" element={
-          <PopupLayout><PopupPage /></PopupLayout>
-        } />
-      </Routes>
-    </Router>
-  );
+					<Route path="user/list" element={<UserList />} />
+					<Route path="user/register" element={<UserRegister />} />
+					<Route path="user/withdrawn" element={<UserWithdrawn />} />
+
+					<Route path="settings/roles" element={<SettingsRoles />} />
+					<Route path="settings/env" element={<SettingsEnv />} />
+					<Route path="settings/logs" element={<SettingsLogs />} />
+				</Route>
+
+				{/* 사용자 레이아웃 */}
+				<Route path="/user/home" element={
+					<UserLayout><UserHome /></UserLayout>
+				} />
+
+				{/* 사용자 레이아웃 */}
+				<Route path="/user/about" element={
+					<UserLayout><About /></UserLayout>
+				} />
+
+				{/* 팝업 페이지 */}
+				<Route path="/popup/sample" element={
+					<PopupLayout><PopupPage /></PopupLayout>
+				} />
+				<Route path="*" element={<div>404 Not Found</div>} />
+			</Routes>
+		</Router>
+	);
 }
 
 export default App;

@@ -1,0 +1,35 @@
+@import url(../fonts/Pretendard/Pretendard.css);
+@import url(reset.css);
+@import url(variables.css);
+
+/* 폰트패밀리 */
+body {
+	font-family: 'Pretendard', sans-serif;
+	font-weight: 500;
+	color: var(--text);
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--link-hover);
+	text-decoration: underline;
+}
+
+/* input */
+input:autofill,
+input:-webkit-autofill,
+input:-webkit-input-placeholder {
+	-webkit-text-fill-color: var(--link-hover);
+}
+
+/* common */
+header, footer {
+	z-index: 9999;
+}
+.ag-root {
+	z-index: 1 !important;
+}

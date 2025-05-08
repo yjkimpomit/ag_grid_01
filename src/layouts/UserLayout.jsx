@@ -1,7 +1,7 @@
 // Layouts/UserLayout.jsx
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import UserSidebar from '../components/Sidebar';
+import UserSidebar from '../components/UserSidebar';
 
 const UserLayout = ({ children }) => (
 	<div className="user-layout">

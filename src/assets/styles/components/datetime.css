@@ -1,0 +1,25 @@
+/* datetime.css */
+
+.datetime {
+	padding: 0 8px;
+	font-weight: 400;
+}
+.datetime strong {
+	margin: 0 8px 0 0;
+}
+.datetime span {
+	display: inline-flex;
+	justify-content: center;
+}
+
+.datetime .date {
+	width: 88px;
+}
+.datetime .day {
+	width: 24px;
+}
+.datetime .time {
+	justify-content: flex-start;
+	width: 64px;
+	text-align: left;
+}

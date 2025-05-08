@@ -1,0 +1,7 @@
+/* dashboard.css */
+
+/* 통계요약 */
+.statistics-summary .MuiSvgIcon-root  {
+	font-size: 40px;
+	opacity: .6;
+}

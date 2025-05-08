@@ -1,6 +1,6 @@
 // Layouts/PopupLayout.jsx
 const PopupLayout = ({ children }) => (
-	<div className="popup-layout">
+	<div className="popup-window">
 		<header>팝업 제목</header>
 		<div className="popup-content">{children}</div>
 	</div>

@@ -1,58 +1,77 @@
 /* Header.css */
 
-/* 공통 */
-header nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	width:100%;
-}
-header nav ul {
-	display: flex;
-	list-style-type: none;
-}
-
 /* logo */
 header .logo {
 	background-image: url('/src/assets/images/logo.png');
 	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: auto 32px;
-	width: 120px;
+	width: auto;
 	height: 32px;
+	margin-right: 2rem;
+	margin-bottom: 0;
+
+	padding-left: 120px;
+}
+header .logo > span {
+	padding-left: 12px;
+	font-size: 18px;
+}
+header .logo > span::before {
+	height: 16px;
+}
+
+/* header */
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: var(--header-height);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+    backdrop-filter: blur(4px);
+	background-color: var(--white-70);
+}
+
+header > nav {
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+header nav ul {
+	display: flex;
+	list-style-type: none;
+}
+header nav :hover {
+	text-decoration: none;
 }
 
 /* 상단 */
 .top-nav {
+	justify-content: flex-end;
+	width: 100%;
 	background-color: var(--bg-lighter);
 	height: 32px;
 }
-.top-nav li {
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 15px;
-}
 
-/* datetime */
-.datetime {
-	margin: 0 -8px;
-}
-.datetime strong {
-	margin: 0 8px;
-}
-.datetime span {
-	margin: 0 2px;
-}
-
-/* 하단 */
+/* 글로벌메뉴 */
 .global-nav {
-	justify-content: space-between;
-	padding: 1rem;
-	border-bottom: solid 1px #eee;
+	justify-content: flex-start;
+	flex-grow: 1;
 }
 .global-nav li {
-	padding-left: 8px;
-	padding-right: 8px;
+	padding: 0 1rem;
 	font-size: 18px;
+	font-weight: 700;
+}
+
+/* 유틸리티메뉴 */
+.utility-menu {
+	justify-content: flex-end;
+	font-size: 15px;
 	font-weight: 700;
 }

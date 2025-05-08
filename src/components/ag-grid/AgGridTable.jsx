@@ -1,18 +1,7 @@
 // src/components/ag-grid/AgGridTable.jsx
 import React, { useState, useEffect } from 'react';
 import { AgGridReact } from 'ag-grid-react';
-import { ModuleRegistry } from 'ag-grid-community';
-import { ClientSideRowModelModule } from "ag-grid-community";
-import { PaginationModule } from 'ag-grid-community';
-import { ValidationModule } from 'ag-grid-community';
 import { themeQuartz, colorSchemeLightCold, iconSetQuartzBold } from 'ag-grid-community';
-
-// 모듈 등록
-ModuleRegistry.registerModules([
-	ClientSideRowModelModule,
-	PaginationModule,
-	ValidationModule,
-]);
 
 const AgGridTable = () => {
 	const [rowData, setRowData] = useState([]);
@@ -39,8 +28,8 @@ const AgGridTable = () => {
 	// 별도 gridOptions 정의
 	const gridOptions = {
 		pagination: true,
-		paginationPageSize: 2,
-		paginationPageSizeSelector: [2, 10, 50, 100],
+		paginationPageSize: 5,
+		paginationPageSizeSelector: [5, 10, 50, 100],
 		// 기타 설정들
 	};
 
@@ -53,8 +42,6 @@ const AgGridTable = () => {
 				rowData={rowData}
 				rowModelType="clientSide"
 				domLayout='autoHeight'
-				// font-family
-				style={{ fontFamily: "Noto Sans KR, sans-serif" }}
 			/>
 		</div>
 	);
