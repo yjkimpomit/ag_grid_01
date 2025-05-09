@@ -28,12 +28,13 @@ const DashboardGrid = () => {
 		<div className="dashboard-container">
 
 			{/* 콘텐츠 영역 (우측) */}
-			<h1>대시보드</h1>
-			<p>여기에 대시보드 콘텐츠가 표시됩니다.</p>
+			<h1>그리드 샘플</h1>
+			<p>여기에 그리드 컴포넌트 샘플이 표시됩니다.</p>
 			{/* 추가적인 콘텐츠를 여기에 추가할 수 있습니다. */}
 
 			<ReusableGrid columnDefs={adminColumns} rowData={adminData} />
 			
+			{/* 
 			<h2>Second Title</h2>
 			<p>여기에 대시보드 콘텐츠가 표시됩니다.</p>
 			<h3>Third Title</h3>
@@ -44,7 +45,7 @@ const DashboardGrid = () => {
 			<p>여기에 대시보드 콘텐츠가 표시됩니다.</p>
 			<h6>Sixth Title</h6>
 			<p>여기에 대시보드 콘텐츠가 표시됩니다.</p>
-
+			*/}
 		</div>
 	);
 };
