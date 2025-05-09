@@ -15,6 +15,17 @@
 	--accent-08: hsl(160, 56%, 48%);
 	--accent-09: hsl(180 68% 48%);
 	--accent-10: hsl(200 78% 56%);
+	
+	--accent-01-lighter: hsl(220 100% 48%);
+	--accent-02-lighter: hsl(255 100% 48%);
+	--accent-03-lighter: hsl(25 100% 48%);
+	--accent-04-lighter: hsl(60 80% 56%);
+	--accent-05-lighter: hsl(80 100% 48%);
+	--accent-06-lighter: hsl(100 56% 56%);
+	--accent-07-lighter: hsl(140, 56%, 64%);
+	--accent-08-lighter: hsl(160, 56%, 56%);
+	--accent-09-lighter: hsl(180 68% 56%);
+	--accent-10-lighter: hsl(200 78% 68%);
 
 	--white-10: hsl(220 0% 100% / 10%);
 	--white-20: hsl(220 0% 100% / 20%);

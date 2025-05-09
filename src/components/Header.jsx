@@ -1,5 +1,4 @@
 // src/components/layout/Header.jsx
-import React from 'react';
 import { Link } from 'react-router-dom';
 import DateTimeBox from './DateTimeBox';
 import '../assets/styles/components/header.css';

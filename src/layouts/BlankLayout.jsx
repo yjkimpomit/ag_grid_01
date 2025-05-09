@@ -1,7 +1,7 @@
 // Layouts/BlankLayout.jsx
 
 const BlankLayout = ( {children} ) => (
-	<div className="blank-layout">
+	<div>
 		<main>{children}</main>
 	</div>
 );

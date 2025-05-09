@@ -5,7 +5,6 @@ const AdminUserHome = () => {
 
 	return (
 		<div className="dashboard-container">
-
 			{/* 콘텐츠 영역 (우측) */}
 			<h1>회원 관리</h1>
 			<p>여기에 회원 관리 콘텐츠가 표시됩니다.</p>

@@ -18,9 +18,10 @@ const Login = () => {
 			setError('잘못된 사용자 이름 또는 비밀번호입니다.');
 		}
 	};
-
+	
 	return (
 		<div className="login-container">
+
 			<div className="login-box">
 				<h1 className="logo">
 					<span className="visually-hidden">포미트</span>
@@ -36,7 +37,7 @@ const Login = () => {
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 							required
-							autoComplete="current-username"  // 현재 비밀번호에 대한 자동 완성
+							autoComplete="username"  // 현재 비밀번호에 대한 자동 완성
 						/>
 					</div>
 					<div>

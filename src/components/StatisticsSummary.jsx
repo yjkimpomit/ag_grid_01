@@ -1,5 +1,4 @@
-import React from 'react';
-
+/* components/StatisticsSummary.jsx */
 /**
  * 재사용 가능한 통계 요약 카드 컴포넌트
  * @param {Array} stats - [{ metric: '지표명', value: '값', icon?: <IconComponent /> }]
@@ -7,7 +6,7 @@ import React from 'react';
  */
 function StatisticsSummary({ stats, title = '통계 요약' }) {
   return (
-    <div>
+    <div style={{marginBottom: 20}}>
       <h2>{title}</h2>
       <div className="statistics-summary" style={{ display: 'flex', gap: 20 }}>
         {stats.map(({ metric, value, icon }, idx) => (

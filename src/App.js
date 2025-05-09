@@ -1,9 +1,10 @@
 // App.js
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 import Login from './pages/Login';
 
 // 레이아웃
-import BlankLayout from './layouts/BlankLayout';
+//import BlankLayout from './layouts/BlankLayout';
 import FullWidthLayout from './layouts/FullWidthLayout';
 import AdminLayout from './layouts/AdminLayout';
 import UserLayout from './layouts/UserLayout';
@@ -16,7 +17,7 @@ import AdminUserHome from './pages/admin/AdminUserHome';
 import SettingsHome from './pages/admin/SettingsHome';
 
 // 2차 메뉴(고유 디자인)
-import DashboardSummary from './pages/admin/dashboard/Summary';
+import DashboardGrid from './pages/admin/dashboard/Grid';
 import DashboardRealtime from './pages/admin/dashboard/Realtime';
 import DashboardNotice from './pages/admin/dashboard/Notice';
 
@@ -32,7 +33,7 @@ import SettingsLogs from './pages/admin/settings/Logs';
 import UserHome from './pages/user/Home';
 import About from './pages/user/About';
 
-// 팝업업
+// 팝업
 import PopupPage from './pages/PopupPage';
 
 import './assets/styles/layout.css';
@@ -46,7 +47,7 @@ function App() {
 
 				{/* 로그인 */}
 				<Route path="/login" element={
-					<BlankLayout><Login /></BlankLayout>
+					<Login />
 				} />
 
 				{/* 인덱스(좌측 메뉴 없는 레이아웃) */}
@@ -54,12 +55,12 @@ function App() {
 
 				<Route path="/admin/*" element={<AdminLayout />}>
 					{/* 1차 메뉴: 공통 디자인 */}
-					<Route path="dashboard" element={<DashboardHome />} />
+					<Route path="dashboard" element={<DashboardGrid />} />
 					<Route path="user" element={<AdminUserHome />} />
 					<Route path="settings" element={<SettingsHome />} />
 
 					{/* 2차 메뉴: 고유 디자인 */}
-					<Route path="dashboard/summary" element={<DashboardSummary />} />
+					<Route path="dashboard/grid" element={<DashboardGrid />} />
 					<Route path="dashboard/realtime" element={<DashboardRealtime />} />
 					<Route path="dashboard/notice" element={<DashboardNotice />} />
 

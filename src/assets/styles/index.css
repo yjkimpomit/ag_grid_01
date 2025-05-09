@@ -1,6 +1,7 @@
 @import url(../fonts/Pretendard/Pretendard.css);
 @import url(reset.css);
 @import url(variables.css);
+@import url(./components/button.css);
 
 /* 폰트패밀리 */
 body {

@@ -1,5 +1,5 @@
 // src/components/ag-grid/AgGridTable.jsx
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { themeQuartz, colorSchemeLightCold, iconSetQuartzBold } from 'ag-grid-community';
 

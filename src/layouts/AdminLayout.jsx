@@ -8,7 +8,7 @@ const AdminLayout = () => (
 	<div className="admin-layout">
 		<Header />
 		<div className="admin-body">
-			<AdminSidebar />
+		<AdminSidebar />
 			<main>
 				<Outlet />  {/* 👈 여기에 하위 라우트가 렌더링 */}
 			</main>

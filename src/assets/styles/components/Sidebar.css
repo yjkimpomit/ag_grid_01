@@ -1,8 +1,18 @@
 /* sidebar.css */
 
+.sidebar {
+	flex: 1 0 240px;
+	max-width: 240px;
+	border-right: solid 1px var(--border-lightest);
+}
 .sidebar nav {
+	/* 
 	position: fixed;
-	top: auto;
+	top: var(--header-height);
+	bottom: var(--footer-height);
+	overflow-y: auto;
+ 	*/
+	width: 100%;
 }
 
 .sidebar a {
