@@ -18,7 +18,7 @@ const Header = () => {
 			<nav className="global-nav">
 				<Link to="/" className='logo'>
 					<span className="visually-hidden">포미트</span>
-					<span>브랜드타이틀</span>
+					<span>AG Grid</span>
 				</Link>
 				<ul>
 					<li><Link to="/user/home">User</Link></li>
